@@ -1,0 +1,49 @@
+<!-- Specify the webpage uses HTML 5 as the document type -->
+<!DOCTYPE html>
+
+<!-- Set the root element -->
+<html lang="en">
+  <!-- Meta-data -->
+  <head>
+    <!-- Specify the use of special characters -->
+    <meta charset="utf-8" />
+    <!-- Title is shown in browser tabs -->
+    <title>HTML 5 Boilerplate</title>
+  </head>
+
+  <!-- Content / Structure of the Webpage -->
+  <body>
+    <script>
+      // EXERCISE
+      // Write a function called add7 that takes one number and returns that number + 7.
+
+      add_seven = function (input_number) {
+        return Number(input_number) + 7;
+      };
+
+      // EXERCISE
+      // Write a function called multiply that takes 2 numbers and returns their product.
+      let multiply = (num1, num2) => num1 * num2;
+
+      // EXERCISE
+      // Write a function called capitalize that takes a string and returns that string with only the first letter capitalized.
+      // Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+      capitalize = function (input_string) {
+        // Convert to lower to deal with different types of input
+        let cleaned_string = input_string.toLowerCase();
+        // Capitalize the first letter + add rest of string
+        let capital_letter = cleaned_string
+          .substr((from = 0), (length = 1))
+          .toUpperCase();
+        let capital_sentence = capital_letter + cleaned_string.slice(1);
+
+        return capital_sentence;
+      };
+
+      // EXERCISE
+      // Write a function called lastLetter that takes a string and returns the very last letter of that string:
+      let lastLetter = (input_string) => input_string.slice(-1);
+    </script>
+  </body>
+</html>
